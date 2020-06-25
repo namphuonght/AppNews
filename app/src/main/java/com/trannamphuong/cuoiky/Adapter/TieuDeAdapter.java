@@ -1,17 +1,18 @@
 package com.trannamphuong.cuoiky.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
+import com.trannamphuong.cuoiky.Activity.NoidungActivity;
 import com.trannamphuong.cuoiky.Model.TieuDe;
 import com.trannamphuong.cuoiky.R;
 
@@ -29,15 +30,9 @@ public class TieuDeAdapter extends RecyclerView.Adapter<TieuDeAdapter.ViewHolder
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, final int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.item_tieude, parent, false);
-        view.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(context, "da click vao day", Toast.LENGTH_SHORT).show();
-            }
-        });
         return new ViewHolder(view);
 
     }
@@ -64,6 +59,15 @@ public class TieuDeAdapter extends RecyclerView.Adapter<TieuDeAdapter.ViewHolder
             imgTieuDe = itemView.findViewById(R.id.img_tieude);
             tvTieuDe = itemView.findViewById(R.id.tv_tieude);
             tvMoTa = itemView.findViewById(R.id.tv_mota);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(context, NoidungActivity.class);
+                    intent.putExtra("tieude",mangTieuDe.get(getPosition()));
+                    context.startActivity(intent);
+                }
+            });
 
         }
     }

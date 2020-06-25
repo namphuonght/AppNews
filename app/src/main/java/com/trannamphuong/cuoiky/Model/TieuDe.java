@@ -3,8 +3,13 @@ package com.trannamphuong.cuoiky.Model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class TieuDe {
+import java.io.Serializable;
 
+public class TieuDe implements Serializable {
+
+    @SerializedName("id_tintuc")
+    @Expose
+    private String idTintuc;
     @SerializedName("tieu_de")
     @Expose
     private String tieuDe;
@@ -14,6 +19,14 @@ public class TieuDe {
     @SerializedName("mo_ta")
     @Expose
     private String moTa;
+
+    public String getIdTintuc() {
+        return idTintuc;
+    }
+
+    public void setIdTintuc(String idTintuc) {
+        this.idTintuc = idTintuc;
+    }
 
     public String getTieuDe() {
         return tieuDe;

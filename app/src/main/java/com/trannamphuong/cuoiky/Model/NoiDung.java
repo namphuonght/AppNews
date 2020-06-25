@@ -7,47 +7,47 @@ public class NoiDung {
 
     @SerializedName("tieude")
     @Expose
-    private Integer tieude;
-    @SerializedName("noi_dung")
+    private String tieude;
+    @SerializedName("mo_bai")
     @Expose
-    private String noiDung;
+    private String moBai;
     @SerializedName("url_imgNoiDung")
     @Expose
     private String urlImgNoiDung;
-    @SerializedName("url_video")
+    @SerializedName("ket_bai")
     @Expose
-    private String urlVideo;
+    private String ketBai;
 
-    public Integer getTieude() {
-    return tieude;
+    public String getTieude() {
+        return tieude;
     }
 
-    public void setTieude(Integer tieude) {
-    this.tieude = tieude;
+    public void setTieude(String tieude) {
+        this.tieude = tieude;
     }
 
-    public String getNoiDung() {
-    return noiDung;
+    public String getMoBai() {
+        return moBai;
     }
 
-    public void setNoiDung(String noiDung) {
-    this.noiDung = noiDung;
+    public void setMoBai(String moBai) {
+        this.moBai = moBai;
     }
 
     public String getUrlImgNoiDung() {
-    return urlImgNoiDung;
+        return urlImgNoiDung;
     }
 
     public void setUrlImgNoiDung(String urlImgNoiDung) {
-    this.urlImgNoiDung = urlImgNoiDung;
+        this.urlImgNoiDung = urlImgNoiDung;
     }
 
-    public String getUrlVideo() {
-    return urlVideo;
+    public String getKetBai() {
+        return ketBai;
     }
 
-    public void setUrlVideo(String urlVideo) {
-    this.urlVideo = urlVideo;
+    public void setKetBai(String ketBai) {
+        this.ketBai = ketBai;
     }
 
 }
