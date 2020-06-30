@@ -6,7 +6,6 @@
     android:orientation="vertical"
     android:background="#DDDADA">
 
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_tieude"
         android:layout_width="match_parent"

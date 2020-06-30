@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <TextView
+        android:id="@+id/tv_tieudegocnhin"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:text="TextView"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/img_tieudegocnhin"
+        android:layout_width="match_parent"
+        android:layout_height="276dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/tv_motagocnhin"
+        android:layout_width="match_parent"
+        android:layout_height="137dp"
+        android:text="TextView"
+        android:textSize="20dp" />
+
+</LinearLayout>

@@ -22,22 +22,5 @@
             android:textStyle = "bold"
              />
     </LinearLayout>
-    <LinearLayout
-        android:layout_width = "0dp"
-        android:layout_height = "match_parent"
-        android:layout_marginRight = "10dp"
-        android:layout_weight = "0.4"
-        android:gravity = "end">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:src="@drawable/post" />
-
-        <ImageView
-            android:layout_width = "40dp"
-            android:layout_height = "35dp"
-            android:layout_marginLeft = "20dp"
-            android:src = "@drawable/search" />
-    </LinearLayout>
 </LinearLayout>
