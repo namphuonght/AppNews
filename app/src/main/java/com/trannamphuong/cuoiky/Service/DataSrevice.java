@@ -31,6 +31,10 @@ public interface DataSrevice {
     @POST("noidung/")
     Call<List<NoiDung>> getNoiDung(@Field("id") String id);
 
+    @FormUrlEncoded
+    @POST("timkiem/")
+    Call<List<TieuDe>> getTimKiem(@Field("tukhoa") String tukhoa);
+
 
 
 }

@@ -7,12 +7,30 @@
     android:background="#DDDADA">
 
     <SearchView
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
+        android:id="@+id/searchview"
         android:layout_width="match_parent"
-        android:layout_height="74dp"
+        android:layout_height="59dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="5dp"
         android:background="#ffff"
         android:queryHint="Nhập nội dung cần tìm" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvsearch"
+            android:layout_width="match_parent"
+            android:layout_height="636dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp" />
+
+
+    <TextView
+        android:id="@+id/tvnotdata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="35sp"
+        android:text="Không có dữ liệu"
+        android:visibility="gone"
+        android:gravity="center"/>
 
 </LinearLayout>

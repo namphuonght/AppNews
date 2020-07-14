@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
 import com.trannamphuong.cuoiky.Model.NoiDung;
-import com.trannamphuong.cuoiky.Model.TieuDe;
 import com.trannamphuong.cuoiky.R;
 
 import java.util.ArrayList;
@@ -21,7 +20,7 @@ public class NoiDungAdapter extends RecyclerView.Adapter<NoiDungAdapter.ViewHold
 
     Context context;
     ArrayList<NoiDung> ArrayNoiDung;
-    TieuDe tieuDe;
+
 
     public NoiDungAdapter(Context context, ArrayList<NoiDung> arrayNoiDung) {
         this.context = context;
@@ -53,7 +52,7 @@ public class NoiDungAdapter extends RecyclerView.Adapter<NoiDungAdapter.ViewHold
 
     public class ViewHolder extends RecyclerView.ViewHolder{
         ImageView imgNoiDung;
-        TextView tvTieuDe, tvMoTa, tvMobai, tvKetBai;
+        TextView tvMobai, tvKetBai;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             imgNoiDung = itemView.findViewById(R.id.img_noidung);

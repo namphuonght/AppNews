@@ -22,19 +22,22 @@
     <FrameLayout
         android:id="@+id/framelayout"
         android:layout_width="match_parent"
-        android:layout_height="577dp">
+        android:layout_height="583dp">
 
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewpager_id"
             android:layout_width="match_parent"
-            android:layout_height="580dp">
+            android:layout_height="match_parent">
 
         </androidx.viewpager.widget.ViewPager>
+
     </FrameLayout>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/main_nav"
         android:layout_width="match_parent"
-        android:layout_height="57dp"
+        android:layout_height="wrap_content"
         android:background="#A69696"
         app:menu="@menu/nav_items" />
+
 </LinearLayout>

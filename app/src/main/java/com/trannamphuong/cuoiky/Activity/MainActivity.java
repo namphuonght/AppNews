@@ -24,6 +24,7 @@ import com.trannamphuong.cuoiky.Fragment.Fragment_MoiNhat;
 import com.trannamphuong.cuoiky.Fragment.Fragment_Search;
 import com.trannamphuong.cuoiky.Fragment.Fragment_ThoiSu;
 import com.trannamphuong.cuoiky.Fragment.Fragment_TrangChu;
+import com.trannamphuong.cuoiky.Fragment.Fragment_TrangNhat;
 import com.trannamphuong.cuoiky.R;
 
 
@@ -92,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
         adapter = new ViewPagerAdapter(getSupportFragmentManager());
 
         //add fragment o day
-        adapter.addFragment(new Fragment_TrangChu(),"Trang nhất");
+        adapter.addFragment(new Fragment_TrangNhat(),"Trang nhất");
         adapter.addFragment(new Fragment_MoiNhat(),"Mới nhất");
         adapter.addFragment(new Fragment_ThoiSu(),"Thời sự");
         adapter.addFragment(new Fragment_GocNhin(),"Góc nhìn");

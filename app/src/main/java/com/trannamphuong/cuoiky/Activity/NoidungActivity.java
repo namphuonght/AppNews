@@ -3,7 +3,6 @@ package com.trannamphuong.cuoiky.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -27,7 +26,6 @@ public class NoidungActivity extends AppCompatActivity {
 
     TieuDe tieuDe;
     RecyclerView recyclerViewNoiDung;
-    TextView tvTieuDe, tvMoTa;
     NoiDungAdapter noiDungAdapter;
 
     @Override
